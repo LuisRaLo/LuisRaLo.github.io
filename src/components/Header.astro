@@ -1,0 +1,52 @@
+---
+import type { LangContent } from "../data/content";
+import { profile } from "../data/content";
+
+interface Props {
+  content: LangContent;
+  lang: "es" | "en";
+}
+
+const { content, lang } = Astro.props;
+const navId = `nav-${lang}`;
+---
+
+<header class="site-header">
+  <div class="site-header-bg"></div>
+  <div class="container">
+    <a class="brand" href="#top">
+      <span class="brand-mark">{profile.initials}</span>
+      <span>Luis Ramírez</span>
+    </a>
+
+    <nav class="nav-links" id={navId}>
+      <a href="#spotlight">{content.nav.spotlight}</a>
+      <a href="#about">{content.nav.about}</a>
+      <a href="#experience">{content.nav.experience}</a>
+      <a href="#skills">{content.nav.skills}</a>
+      <a href="#activity">{content.nav.activity}</a>
+      <a href="#education">{content.nav.education}</a>
+      <a href="#contact">{content.nav.contact}</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn lang-btn" data-action="toggle-lang" aria-label="Toggle language" type="button">
+        {lang === "es" ? "EN" : "ES"}
+      </button>
+      <button class="icon-btn" data-action="toggle-theme" aria-label="Toggle theme" type="button">
+        <svg class="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+        </svg>
+        <svg class="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+      <button class="icon-btn nav-toggle" data-action="toggle-nav" aria-controls={navId} aria-expanded="false" aria-label="Toggle menu" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 6h18M3 12h18M3 18h18"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>

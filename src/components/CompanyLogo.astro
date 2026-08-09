@@ -1,0 +1,22 @@
+---
+interface Props {
+  logo: string;
+  domain?: string;
+  logoImage?: string;
+}
+
+const { logo, domain, logoImage } = Astro.props;
+const imgSrc = logoImage || (domain ? `https://www.google.com/s2/favicons?domain=${domain}&sz=64` : null);
+const fallbackScript =
+  "this.parentElement.classList.remove('company-logo-img');this.parentElement.textContent=this.parentElement.dataset.fallback;";
+---
+
+{
+  imgSrc ? (
+    <span class="company-logo company-logo-img" data-fallback={logo}>
+      <img src={imgSrc} alt="" width="24" height="24" loading="lazy" onerror={fallbackScript} />
+    </span>
+  ) : (
+    <span class="company-logo" aria-hidden="true">{logo}</span>
+  )
+}

@@ -1,0 +1,17 @@
+---
+import type { LangContent } from "../data/content";
+
+interface Props {
+  content: LangContent;
+}
+
+const { content } = Astro.props;
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© {year} Luis Enrique Ramírez López — {content.footer.rights}</span>
+    <span>{content.footer.builtWith}</span>
+  </div>
+</footer>

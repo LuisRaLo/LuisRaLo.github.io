@@ -1,0 +1,90 @@
+---
+import type { LangContent } from "../data/content";
+import CompanyLogo from "./CompanyLogo.astro";
+
+interface Props {
+  content: LangContent;
+}
+
+const { content } = Astro.props;
+---
+
+<section class="section section-alt" id="experience">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">{content.nav.experience}</span>
+      <h2 class="section-title">{content.experience.title}</h2>
+    </div>
+
+    <div class="timeline">
+      {content.experience.jobs.map((job, index) => {
+        const side = index % 2 === 0 ? "left" : "right";
+        return (
+        <div class:list={["timeline-row", `timeline-row-${side}`]}>
+        <div class="timeline-marker">
+          <span class="timeline-year">{job.year}</span>
+          <span class="timeline-dot"></span>
+        </div>
+        <article class="job-card timeline-card">
+          <div class="job-head">
+            <div class="job-company-row">
+              <CompanyLogo logo={job.logo} domain={job.domain} logoImage={job.logoImage} />
+              <div>
+                <div class="job-company">{job.company}</div>
+                {job.location && <div class="job-location">{job.location}</div>}
+              </div>
+            </div>
+            <div class="job-roles">
+              {job.roles.map((role) => (
+                <div class="job-role-row">
+                  <span class="job-role-title">{role.title}</span>
+                  <span class="job-role-period">{role.period}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <ul class="job-bullets">
+            {job.bullets.map((bullet) => (
+              <li>{bullet}</li>
+            ))}
+          </ul>
+
+          <div class="job-tech">
+            {job.tech.map((t) => (
+              <span class="tag">{t}</span>
+            ))}
+          </div>
+
+          {job.projects && job.projects.length > 0 && (
+            <div class="job-projects">
+              <div class="job-projects-label">{content.experience.projectsLabel}</div>
+              <div class="job-projects-grid">
+                {job.projects.map((project) => (
+                  <div class="job-project-card">
+                    <div class="job-project-name">{project.name}</div>
+                    <p class="job-project-description">{project.description}</p>
+                    {project.links.length > 0 && (
+                      <div class="project-links">
+                        {project.links.map((link) => (
+                          <a class="project-link" href={link.url} target="_blank" rel="noopener noreferrer">
+                            {content.experience.visitLabel}: {link.label}
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M7 17L17 7M17 7H8M17 7v9"></path>
+                            </svg>
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </article>
+        </div>
+        );
+      })}
+    </div>
+  </div>
+</section>

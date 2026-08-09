@@ -1,0 +1,49 @@
+---
+import type { LangContent } from "../data/content";
+
+interface Props {
+  content: LangContent;
+}
+
+const { content } = Astro.props;
+---
+
+<section class="section section-alt" id="education">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">{content.nav.education}</span>
+      <h2 class="section-title">{content.education.title}</h2>
+    </div>
+
+    <div class="education-grid">
+      <div>
+        {content.education.entries.map((entry) => (
+          <div class="edu-card">
+            <div class="edu-school">{entry.school}</div>
+            <div class="edu-degree">{entry.degree}</div>
+            <div class="edu-period">{entry.period}</div>
+            {entry.note && <div class="edu-note">{entry.note}</div>}
+          </div>
+        ))}
+      </div>
+
+      <div>
+        <div class="courses-title">{content.education.coursesTitle}</div>
+        <div class="courses-list">
+          {content.education.courses.map((course) => (
+            <div class:list={["course-row", { "course-row-featured": course.featured }]}>
+              <div>
+                <div class="course-name-row">
+                  <div class="course-name">{course.name}</div>
+                  {course.featured && <span class="course-badge">{content.education.featuredLabel}</span>}
+                </div>
+                <div class="course-org">{course.org}</div>
+              </div>
+              <div class="course-year">{course.year}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

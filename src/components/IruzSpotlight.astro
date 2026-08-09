@@ -1,0 +1,54 @@
+---
+import type { LangContent } from "../data/content";
+
+interface Props {
+  content: LangContent;
+}
+
+const { content } = Astro.props;
+const s = content.spotlight;
+---
+
+<section class="section" id="spotlight">
+  <div class="container">
+    <div class="spotlight-card">
+      <div class="spotlight-header">
+        <img class="spotlight-logo" src="/assets/logos/iruzlabs.png" alt="Iruz Labs" width="56" height="56" />
+        <div>
+          <span class="eyebrow spotlight-eyebrow">{s.eyebrow}</span>
+          <h2 class="section-title spotlight-title">{s.title}</h2>
+          <p class="spotlight-subtitle">{s.subtitle}</p>
+        </div>
+      </div>
+
+      <div class="spotlight-grid">
+        <div class="spotlight-block">
+          <div class="spotlight-label">{s.problemLabel}</div>
+          <p>{s.problem}</p>
+        </div>
+        <div class="spotlight-block">
+          <div class="spotlight-label">{s.productLabel}</div>
+          <p>{s.product}</p>
+        </div>
+        <div class="spotlight-block">
+          <div class="spotlight-label">{s.proofLabel}</div>
+          <p>{s.proof}</p>
+        </div>
+      </div>
+
+      <div class="spotlight-footer">
+        <div class="spotlight-links">
+          {s.links.map((link) => (
+            <a href={link.url} target="_blank" rel="noopener noreferrer">
+              {link.label}
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17L17 7M17 7H8M17 7v9"></path>
+              </svg>
+            </a>
+          ))}
+        </div>
+        <a class="btn btn-primary spotlight-cta" href="#contact">{s.cta}</a>
+      </div>
+    </div>
+  </div>
+</section>

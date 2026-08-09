@@ -1,0 +1,46 @@
+---
+import type { LangContent } from "../data/content";
+import { profile } from "../data/content";
+
+interface Props {
+  content: LangContent;
+}
+
+const { content } = Astro.props;
+const username = profile.github.replace(/\/$/, "").split("/").pop();
+---
+
+<section class="section" id="activity">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">{content.nav.activity}</span>
+      <h2 class="section-title">{content.githubActivity.title}</h2>
+      <p class="section-subtitle">{content.githubActivity.subtitle}</p>
+    </div>
+
+    <div class="github-card">
+      <img
+        class="github-chart github-chart-light"
+        src={`https://ghchart.rshah.org/009999/${username}`}
+        alt={`GitHub contribution graph for ${username}`}
+        loading="lazy"
+        width="717"
+        height="112"
+      />
+      <img
+        class="github-chart github-chart-dark"
+        src={`https://ghchart.rshah.org/2dd4d4/${username}`}
+        alt={`GitHub contribution graph for ${username}`}
+        loading="lazy"
+        width="717"
+        height="112"
+      />
+      <a class="github-card-link" href={profile.github} target="_blank" rel="noopener noreferrer">
+        {content.githubActivity.viewProfile}
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M7 17L17 7M17 7H8M17 7v9"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>

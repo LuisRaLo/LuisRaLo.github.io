@@ -1,0 +1,47 @@
+---
+import type { LangContent } from "../data/content";
+
+interface Props {
+  content: LangContent;
+}
+
+const { content } = Astro.props;
+---
+
+<section class="section" id="skills">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">{content.nav.skills}</span>
+      <h2 class="section-title">{content.techStack.title}</h2>
+      <p class="section-subtitle">{content.techStack.subtitle}</p>
+    </div>
+
+    <div class="tech-grid">
+      {content.techStack.items.map((tech) => (
+        <div class="tech-item reveal">
+          {tech.slug ? (
+            <span class="tech-icon" style={`--tech-icon: url(https://cdn.simpleicons.org/${tech.slug})`} aria-hidden="true"></span>
+          ) : (
+            <span class="tech-icon tech-icon-text" aria-hidden="true">{tech.name}</span>
+          )}
+          <span class="tech-name">{tech.name}</span>
+        </div>
+      ))}
+    </div>
+
+    <h3 class="subsection-title reveal">{content.skills.title}</h3>
+
+    <div class="skills-grid">
+      {content.skills.groups.map((group) => (
+        <div class="skill-card reveal">
+          <h3>{group.title}</h3>
+          <ul>
+            {group.items.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

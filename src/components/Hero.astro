@@ -1,0 +1,70 @@
+---
+import type { LangContent } from "../data/content";
+import { profile } from "../data/content";
+
+interface Props {
+  content: LangContent;
+}
+
+const { content } = Astro.props;
+---
+
+<section class="hero" id="top">
+  <div class="container">
+    <div class="hero-intro">
+      <p class="hero-greeting">{content.hero.greeting}</p>
+      <h1 class="hero-name">{content.hero.name}</h1>
+      <p class="hero-role">{content.hero.role}</p>
+      <p class="hero-ex-companies">{content.hero.exCompanies}</p>
+      <p class="hero-tagline">{content.hero.tagline}</p>
+
+      <div class="hero-actions">
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#contact">{content.hero.ctaContact}</a>
+          <a class="btn btn-ghost" href={profile.cv} download>{content.hero.ctaCV}</a>
+        </div>
+
+        <div class="hero-social">
+          <a class="icon-btn hero-social-btn" href={profile.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <span class="hero-social-text">in</span>
+          </a>
+          <a class="icon-btn hero-social-btn" href={profile.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <span class="hero-social-icon" style="--tech-icon: url(https://cdn.simpleicons.org/github)"></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-certs">
+        <span class="hero-certs-label">{content.hero.certifiedByLabel}</span>
+        <span class="hero-cert-badge">
+          <span class="hero-cert-icon" style="--tech-icon: url(https://cdn.simpleicons.org/nvidia)"></span>
+          NVIDIA
+        </span>
+        <span class="hero-cert-badge">IBM</span>
+      </div>
+
+      <div class="hero-stats">
+        {content.hero.stats.map((stat) => (
+          <div class="hero-stat">
+            <div class="hero-stat-value">{stat.value}</div>
+            <div class="hero-stat-label">{stat.label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="hero-photo-wrap">
+      <img class="hero-photo" src={profile.photo} alt={content.hero.name} width="280" height="340" />
+      <div class="hero-available-badge">
+        <span class="hero-available-dot"></span>
+        {content.hero.availableBadge}
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="hero-scroll-cue" aria-label="Scroll down">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 5v14M5 12l7 7 7-7"></path>
+    </svg>
+  </a>
+</section>

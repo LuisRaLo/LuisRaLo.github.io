@@ -1,0 +1,10 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Site from "../components/Site.astro";
+import { content } from "../data/content";
+---
+
+<Layout title={content.es.meta.title} description={content.es.meta.description}>
+  <Site content={content.es} lang="es" />
+  <Site content={content.en} lang="en" />
+</Layout>

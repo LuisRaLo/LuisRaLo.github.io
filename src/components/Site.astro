@@ -1,0 +1,35 @@
+---
+import type { LangContent } from "../data/content";
+import Header from "./Header.astro";
+import Hero from "./Hero.astro";
+import IruzSpotlight from "./IruzSpotlight.astro";
+import About from "./About.astro";
+import Experience from "./Experience.astro";
+import Skills from "./Skills.astro";
+import GithubActivity from "./GithubActivity.astro";
+import Education from "./Education.astro";
+import Contact from "./Contact.astro";
+import Footer from "./Footer.astro";
+
+interface Props {
+  content: LangContent;
+  lang: "es" | "en";
+}
+
+const { content, lang } = Astro.props;
+---
+
+<div data-lang-block={lang}>
+  <Header content={content} lang={lang} />
+  <main>
+    <Hero content={content} />
+    <IruzSpotlight content={content} />
+    <About content={content} />
+    <Experience content={content} />
+    <Skills content={content} />
+    <GithubActivity content={content} />
+    <Education content={content} />
+    <Contact content={content} />
+  </main>
+  <Footer content={content} />
+</div>
