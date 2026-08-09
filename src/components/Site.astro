@@ -14,21 +14,35 @@ import Footer from "./Footer.astro";
 interface Props {
   content: LangContent;
   lang: "es" | "en";
+  variant?: "investor" | "recruiter";
 }
 
-const { content, lang } = Astro.props;
+const { content, lang, variant = "investor" } = Astro.props;
 ---
 
 <div data-lang-block={lang}>
-  <Header content={content} lang={lang} />
+  <Header content={content} lang={lang} variant={variant} />
   <main>
-    <Hero content={content} />
-    <IruzSpotlight content={content} />
-    <About content={content} />
-    <Experience content={content} />
-    <Skills content={content} />
-    <GithubActivity content={content} />
-    <Education content={content} />
+    <Hero content={content} variant={variant} lang={lang} />
+    {variant === "investor" ? (
+      <>
+        <IruzSpotlight content={content} />
+        <About content={content} />
+        <Experience content={content} />
+        <Skills content={content} />
+        <GithubActivity content={content} />
+        <Education content={content} />
+      </>
+    ) : (
+      <>
+        <About content={content} />
+        <Experience content={content} />
+        <Skills content={content} />
+        <GithubActivity content={content} />
+        <Education content={content} />
+        <IruzSpotlight content={content} />
+      </>
+    )}
     <Contact content={content} />
   </main>
   <Footer content={content} />

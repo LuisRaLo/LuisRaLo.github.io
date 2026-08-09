@@ -36,6 +36,15 @@ const s = content.spotlight;
         </div>
       </div>
 
+      <div class="spotlight-stats">
+        {s.stats.map((stat) => (
+          <div class="spotlight-stat">
+            <div class="spotlight-stat-value">{stat.value}</div>
+            <div class="spotlight-stat-label">{stat.label}</div>
+          </div>
+        ))}
+      </div>
+
       <div class="spotlight-footer">
         <div class="spotlight-links">
           {s.links.map((link) => (

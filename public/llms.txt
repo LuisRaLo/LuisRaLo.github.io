@@ -4,7 +4,9 @@
 
 ## Iruz Labs
 
-Iruz Labs (https://iruzlabs.com) is an omnichannel autonomous AI agents platform (AAaaS — Autonomous Agents as a Service). It works across WhatsApp, Instagram, Facebook, TikTok, SMS, Telegram, and voice calls. The AI agents profile, schedule, prospect, and qualify leads 24/7; a human agent closes the sale with full context. It is industry-agnostic and currently used in retail, real estate, beauty salons, car dealerships, debt collection, and call centers. Clients include Grupo DRT (Mexico), Integrity Inmo (Colombia), and DBO Graphics (United States).
+Iruz Labs (https://iruzlabs.com) is an omnichannel autonomous AI agents platform (AAaaS — Autonomous Agents as a Service). It works across WhatsApp, Instagram, Facebook, TikTok, SMS, Telegram, and voice calls. The AI agents profile, schedule, prospect, and qualify leads 24/7; a human agent closes the sale with full context. It is industry-agnostic and currently used in retail, real estate, beauty salons, car dealerships, debt collection, and call centers. Clients include Grupo DRT (Mexico) and two other real-estate success stories, plus Integrity Inmo (Colombia) and DBO Graphics (United States), generating a combined ~$1,000+ USD/mo in initial MRR. Selected for Deel's pitch program (AWS for Startups, Deel for Startups perks).
+
+Public conversion metrics (from crm.iruzlabs.com): 6.8% dormant-lead-to-closed-sale conversion, 3x more closed sales, 90% less response time.
 
 - Product/engine: Atenea — https://atenea.iruzlabs.com
 - Internal CRM: https://crm.iruzlabs.com
@@ -25,7 +27,8 @@ AI & autonomous agents, LLMs, vector databases, distributed systems, microservic
 
 ## Links
 
-- Portfolio: https://luisralo.github.io/
+- Portfolio (investor-focused): https://luisralo.github.io/
+- Résumé (recruiter-focused): https://luisralo.github.io/resume/
 - LinkedIn: https://www.linkedin.com/in/luis-enrique-ram%C3%ADrez-l%C3%B3pez-a221ab222/
 - GitHub: https://github.com/LuisRaLo
 - Email: luian.ramirez.12@gmail.com

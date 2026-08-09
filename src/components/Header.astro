@@ -5,10 +5,13 @@ import { profile } from "../data/content";
 interface Props {
   content: LangContent;
   lang: "es" | "en";
+  variant?: "investor" | "recruiter";
 }
 
-const { content, lang } = Astro.props;
+const { content, lang, variant = "investor" } = Astro.props;
 const navId = `nav-${lang}`;
+const crossHref = variant === "investor" ? "/resume/" : "/";
+const crossLabel = variant === "investor" ? content.crossLink.toRecruiter : content.crossLink.toInvestor;
 ---
 
 <header class="site-header">
@@ -27,9 +30,11 @@ const navId = `nav-${lang}`;
       <a href="#activity">{content.nav.activity}</a>
       <a href="#education">{content.nav.education}</a>
       <a href="#contact">{content.nav.contact}</a>
+      <a class="cross-link cross-link-mobile" href={crossHref}>{crossLabel}</a>
     </nav>
 
     <div class="header-actions">
+      <a class="cross-link cross-link-desktop" href={crossHref}>{crossLabel}</a>
       <button class="icon-btn lang-btn" data-action="toggle-lang" aria-label="Toggle language" type="button">
         {lang === "es" ? "EN" : "ES"}
       </button>

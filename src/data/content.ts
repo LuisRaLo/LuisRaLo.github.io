@@ -58,6 +58,10 @@ export interface LangContent {
     education: string;
     contact: string;
   };
+  crossLink: {
+    toRecruiter: string;
+    toInvestor: string;
+  };
   hero: {
     greeting: string;
     name: string;
@@ -66,7 +70,6 @@ export interface LangContent {
     tagline: string;
     ctaContact: string;
     ctaCV: string;
-    availableBadge: string;
     certifiedByLabel: string;
     stats: { value: string; label: string }[];
   };
@@ -81,6 +84,7 @@ export interface LangContent {
     product: string;
     proofLabel: string;
     proof: string;
+    stats: { value: string; label: string }[];
     links: { label: string; url: string }[];
     cta: string;
   };
@@ -759,6 +763,10 @@ export const content: { es: LangContent; en: LangContent } = {
       education: "Educación",
       contact: "Contacto",
     },
+    crossLink: {
+      toRecruiter: "Ver CV para reclutadores",
+      toInvestor: "Ver para inversionistas",
+    },
     hero: {
       greeting: "Hola, soy",
       name: "Luis Enrique Ramírez López",
@@ -768,7 +776,6 @@ export const content: { es: LangContent; en: LangContent } = {
         "Arquitecto de software senior con la capacidad única de traducir complejos desafíos de ingeniería en modelos de negocio rentables y escalables.",
       ctaContact: "Hablemos",
       ctaCV: "Descargar CV",
-      availableBadge: "Disponible para nuevos proyectos",
       certifiedByLabel: "Certificado por",
       stats: [
         { value: "14+", label: "años construyendo software" },
@@ -794,7 +801,13 @@ export const content: { es: LangContent; en: LangContent } = {
         "Iruz Labs construye agentes de IA que trabajan de forma omnicanal —WhatsApp, Instagram, Facebook, TikTok, SMS, Telegram y llamadas de voz— perfilando, agendando, prospectando y calificando leads las 24 horas. El agente humano entra al final del proceso, ya con todo el contexto, para cerrar la venta. Incluye un CRM propio con trazabilidad end-to-end del funnel.",
       proofLabel: "Prueba de tracción",
       proof:
-        "Con GRUPO DRT (Querétaro) implementamos un funnel automatizado que incrementó significativamente el ROI de sus campañas de captación inmobiliaria. Ya expandimos a clientes en Colombia (Integrity Inmo) y Estados Unidos (DBO Graphics).",
+        "Dos casos de éxito en real estate además de GRUPO DRT (Querétaro), y clientes activos en Colombia (Integrity Inmo) y Estados Unidos (DBO Graphics), generando en conjunto ~$1,000+ USD/mes en MRR inicial. Seleccionados en el pitch de Deel, con beneficios de AWS for Startups y Deel for Startups.",
+      stats: [
+        { value: "6.8%", label: "conversión de lead dormido a venta cerrada" },
+        { value: "3x", label: "más ventas cerradas" },
+        { value: "90%", label: "menos tiempo de respuesta" },
+        { value: "3", label: "países con clientes activos" },
+      ],
       links: [
         { label: "iruzlabs.com", url: "https://iruzlabs.com" },
         { label: "Ver producto (Atenea)", url: "https://atenea.iruzlabs.com" },
@@ -834,7 +847,7 @@ export const content: { es: LangContent; en: LangContent } = {
     contact: {
       title: "Contacto",
       text: "¿Buscas invertir en Iruz Labs, o buscas un Tech Lead / CTO para tu equipo? En ambos casos, escríbeme — con gusto lo platicamos.",
-      phoneLabel: "Teléfono",
+      phoneLabel: "WhatsApp",
       emailLabel: "Correo",
       locationLabel: "Ubicación",
       cvLabel: "Descargar CV completo (PDF)",
@@ -859,6 +872,10 @@ export const content: { es: LangContent; en: LangContent } = {
       education: "Education",
       contact: "Contact",
     },
+    crossLink: {
+      toRecruiter: "View résumé for recruiters",
+      toInvestor: "View for investors",
+    },
     hero: {
       greeting: "Hi, I'm",
       name: "Luis Enrique Ramírez López",
@@ -868,7 +885,6 @@ export const content: { es: LangContent; en: LangContent } = {
         "Senior software architect with a unique ability to translate complex engineering challenges into profitable, scalable business models.",
       ctaContact: "Let's talk",
       ctaCV: "Download CV",
-      availableBadge: "Available for new projects",
       certifiedByLabel: "Certified by",
       stats: [
         { value: "14+", label: "years building software" },
@@ -894,7 +910,13 @@ export const content: { es: LangContent; en: LangContent } = {
         "Iruz Labs builds AI agents that work omnichannel — WhatsApp, Instagram, Facebook, TikTok, SMS, Telegram, and voice calls — profiling, scheduling, prospecting, and qualifying leads 24/7. The human agent steps in at the end, with full context, to close the sale. Includes an in-house CRM with end-to-end funnel traceability.",
       proofLabel: "Proof of traction",
       proof:
-        "With client GRUPO DRT (Querétaro), we implemented an automated funnel and conversational flow that significantly increased ROI on their real-estate acquisition campaigns. We've since expanded to clients in Colombia (Integrity Inmo) and the United States (DBO Graphics).",
+        "Two real-estate success stories in addition to GRUPO DRT (Querétaro), plus active clients in Colombia (Integrity Inmo) and the United States (DBO Graphics), generating a combined ~$1,000+ USD/mo in initial MRR. Selected for Deel's pitch program, with AWS for Startups and Deel for Startups perks.",
+      stats: [
+        { value: "6.8%", label: "dormant-lead to closed-sale conversion" },
+        { value: "3x", label: "more closed sales" },
+        { value: "90%", label: "less response time" },
+        { value: "3", label: "countries with active clients" },
+      ],
       links: [
         { label: "iruzlabs.com", url: "https://iruzlabs.com" },
         { label: "See the product (Atenea)", url: "https://atenea.iruzlabs.com" },
@@ -934,7 +956,7 @@ export const content: { es: LangContent; en: LangContent } = {
     contact: {
       title: "Contact",
       text: "Looking to invest in Iruz Labs, or looking for a Tech Lead / CTO for your team? Either way, reach out — I'd love to talk.",
-      phoneLabel: "Phone",
+      phoneLabel: "WhatsApp",
       emailLabel: "Email",
       locationLabel: "Location",
       cvLabel: "Download full CV (PDF)",
@@ -948,8 +970,9 @@ export const content: { es: LangContent; en: LangContent } = {
 
 export const profile = {
   phone: "+52 999 514 8922",
-  email: "luian.ramirez.12@gmail.com",
-  location: "Chimalhuacán, Estado de México",
+  whatsapp: "https://wa.me/529995148922",
+  email: "luis@iruzlabs.com",
+  location: "Ciudad de México",
   photo: "/assets/profile.png",
   cv: "/assets/luis-ramirez-cv.pdf",
   initials: "LR",

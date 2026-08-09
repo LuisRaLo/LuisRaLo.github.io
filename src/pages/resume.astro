@@ -1,0 +1,14 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Site from "../components/Site.astro";
+import { content } from "../data/content";
+
+const title = `${content.es.hero.name} — CV / Currículum`;
+const description =
+  "Currículum de Luis Enrique Ramírez López: experiencia como Tech Lead, arquitecto de software senior especializado en IA, sistemas distribuidos y AWS.";
+---
+
+<Layout title={title} description={description}>
+  <Site content={content.es} lang="es" variant="recruiter" />
+  <Site content={content.en} lang="en" variant="recruiter" />
+</Layout>

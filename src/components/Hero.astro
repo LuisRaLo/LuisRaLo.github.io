@@ -4,9 +4,11 @@ import { profile } from "../data/content";
 
 interface Props {
   content: LangContent;
+  variant?: "investor" | "recruiter";
+  lang?: "es" | "en";
 }
 
-const { content } = Astro.props;
+const { content, variant = "investor" } = Astro.props;
 ---
 
 <section class="hero" id="top">
@@ -20,8 +22,17 @@ const { content } = Astro.props;
 
       <div class="hero-actions">
         <div class="hero-cta">
-          <a class="btn btn-primary" href="#contact">{content.hero.ctaContact}</a>
-          <a class="btn btn-ghost" href={profile.cv} download>{content.hero.ctaCV}</a>
+          {variant === "recruiter" ? (
+            <>
+              <a class="btn btn-primary" href={profile.cv} download>{content.hero.ctaCV}</a>
+              <a class="btn btn-ghost" href="#contact">{content.hero.ctaContact}</a>
+            </>
+          ) : (
+            <>
+              <a class="btn btn-primary" href="#contact">{content.hero.ctaContact}</a>
+              <a class="btn btn-ghost" href={profile.cv} download>{content.hero.ctaCV}</a>
+            </>
+          )}
         </div>
 
         <div class="hero-social">
@@ -55,10 +66,6 @@ const { content } = Astro.props;
 
     <div class="hero-photo-wrap">
       <img class="hero-photo" src={profile.photo} alt={content.hero.name} width="280" height="340" />
-      <div class="hero-available-badge">
-        <span class="hero-available-dot"></span>
-        {content.hero.availableBadge}
-      </div>
     </div>
   </div>
 
