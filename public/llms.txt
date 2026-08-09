@@ -1,0 +1,35 @@
+# Luis Enrique Ramírez López
+
+> Founder, CEO & CTO of Iruz Labs. Senior software architect with 14+ years building distributed systems, now translating engineering into scalable, profitable business models. Based in Estado de México, Mexico. Works remotely.
+
+## Iruz Labs
+
+Iruz Labs (https://iruzlabs.com) is an omnichannel autonomous AI agents platform (AAaaS — Autonomous Agents as a Service). It works across WhatsApp, Instagram, Facebook, TikTok, SMS, Telegram, and voice calls. The AI agents profile, schedule, prospect, and qualify leads 24/7; a human agent closes the sale with full context. It is industry-agnostic and currently used in retail, real estate, beauty salons, car dealerships, debt collection, and call centers. Clients include Grupo DRT (Mexico), Integrity Inmo (Colombia), and DBO Graphics (United States).
+
+- Product/engine: Atenea — https://atenea.iruzlabs.com
+- Internal CRM: https://crm.iruzlabs.com
+
+## Background
+
+Before founding Iruz Labs (March 2025–present), Luis led engineering teams at:
+- Arkos MX — Tech Lead
+- NOLAB — Tech Lead & Product Lead / Senior Full-stack Developer
+- Stori — Software Engineer B3 (fintech, payments & topups frontend)
+- Publicis Groupe — Fullstack Engineer (PepsiCo client work, including the miNegocio MX app)
+- Neta Systems – Grupo Salinas — Fullstack Developer
+- CEMEES — Developer (also published in Buzos de la Noticia magazine)
+
+## Skills
+
+AI & autonomous agents, LLMs, vector databases, distributed systems, microservices, event-driven architecture, Kafka, AWS (6+ years), GoLang, Node.js, Python, TypeScript, React, Vue.js, Astro, Docker, Terraform, PostgreSQL, MongoDB. Certified by NVIDIA (Generative AI) and IBM (Python for Data Science).
+
+## Links
+
+- Portfolio: https://luisralo.github.io/
+- LinkedIn: https://www.linkedin.com/in/luis-enrique-ram%C3%ADrez-l%C3%B3pez-a221ab222/
+- GitHub: https://github.com/LuisRaLo
+- Email: luian.ramirez.12@gmail.com
+
+## Contact
+
+Looking to invest in Iruz Labs, or looking for a Tech Lead / CTO? Reach out via the contact section on the portfolio or email directly.
