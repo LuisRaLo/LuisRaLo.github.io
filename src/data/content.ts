@@ -165,7 +165,7 @@ const experienceES: JobEntry[] = [
       },
       {
         name: "CIEE",
-        description: "Implementación de la plataforma de Iruz Labs para un cliente.",
+        description: "Unidad de encuestas e inteligencia de datos electorales de Iruz Labs: estudios de opinión pública, modelado con IA, mapeo geoespacial y campañas digitales para candidatos políticos.",
         links: [{ label: "ciee.iruzlabs.com", url: "https://ciee.iruzlabs.com" }],
       },
     ],
@@ -209,7 +209,7 @@ const experienceES: JobEntry[] = [
       },
       {
         name: "Pulse",
-        description: "Producto web desarrollado en Arkos MX.",
+        description: "SaaS de pedidos con IA para restaurantes: recibe pedidos de clientes, se integra con MiSoftRestaurant, y genera campañas de marketing y upsell impulsadas por IA.",
         links: [{ label: "pulse.arkosmx.com", url: "https://pulse.arkosmx.com" }],
       },
     ],
@@ -331,7 +331,7 @@ const experienceES: JobEntry[] = [
       },
       {
         name: "Joyapp",
-        description: "Plataforma web desarrollada para PepsiCo.",
+        description: "Sistema de recompensas de PepsiCo para sus clientes.",
         links: [{ label: "joyapp.mx", url: "https://www.joyapp.mx" }],
       },
     ],
@@ -449,7 +449,7 @@ const experienceEN: JobEntry[] = [
       },
       {
         name: "CIEE",
-        description: "Client implementation of the Iruz Labs platform.",
+        description: "Iruz Labs' electoral polling and data intelligence unit: public opinion studies, AI modeling, geospatial mapping, and digital campaigns for political candidates.",
         links: [{ label: "ciee.iruzlabs.com", url: "https://ciee.iruzlabs.com" }],
       },
     ],
@@ -493,7 +493,7 @@ const experienceEN: JobEntry[] = [
       },
       {
         name: "Pulse",
-        description: "Web product built at Arkos MX.",
+        description: "AI-powered ordering SaaS for restaurants: takes customer orders, integrates with MiSoftRestaurant, and drives AI-generated marketing campaigns and upsell.",
         links: [{ label: "pulse.arkosmx.com", url: "https://pulse.arkosmx.com" }],
       },
     ],
@@ -615,7 +615,7 @@ const experienceEN: JobEntry[] = [
       },
       {
         name: "Joyapp",
-        description: "Web platform built for PepsiCo.",
+        description: "PepsiCo's customer rewards platform.",
         links: [{ label: "joyapp.mx", url: "https://www.joyapp.mx" }],
       },
     ],
