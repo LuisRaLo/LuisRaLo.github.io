@@ -34,7 +34,11 @@ const { content } = Astro.props;
             <div class:list={["course-row", { "course-row-featured": course.featured }]}>
               <div>
                 <div class="course-name-row">
-                  <div class="course-name">{course.name}</div>
+                  {course.link ? (
+                    <a class="course-name course-name-link" href={course.link} target="_blank" rel="noopener noreferrer">{course.name}</a>
+                  ) : (
+                    <div class="course-name">{course.name}</div>
+                  )}
                   {course.featured && <span class="course-badge">{content.education.featuredLabel}</span>}
                 </div>
                 <div class="course-org">{course.org}</div>

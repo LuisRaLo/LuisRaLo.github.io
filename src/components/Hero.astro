@@ -47,11 +47,14 @@ const { content, variant = "investor" } = Astro.props;
 
       <div class="hero-certs">
         <span class="hero-certs-label">{content.hero.certifiedByLabel}</span>
-        <span class="hero-cert-badge">
+        <a class="hero-cert-badge" href="/assets/certificates/nvidia-ai-for-all.pdf" target="_blank" rel="noopener noreferrer">
           <span class="hero-cert-icon" style="--tech-icon: url(https://cdn.simpleicons.org/nvidia)"></span>
           NVIDIA
-        </span>
-        <span class="hero-cert-badge">IBM</span>
+        </a>
+        <a class="hero-cert-badge" href="https://www.credly.com/badges/36cb9f34-4231-4b55-83a1-73ae4eef77c9/linked_in_profile" target="_blank" rel="noopener noreferrer">
+          <span class="hero-cert-icon" style="--tech-icon: url(https://cdn.simpleicons.org/cisco)"></span>
+          Cisco
+        </a>
       </div>
 
       <div class="hero-stats">

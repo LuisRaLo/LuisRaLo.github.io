@@ -727,6 +727,22 @@ body.is-ready .hero-intro > * {
   border: 1px solid var(--color-border);
   padding: 5px 12px 5px 8px;
   border-radius: 999px;
+  transition: color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.hero-cert-badge:hover {
+  color: var(--color-accent-2);
+  border-color: var(--color-accent);
+  transform: translateY(-1px);
+}
+
+:root:not([data-theme="light"]) .hero-cert-badge:hover {
+  @media (prefers-color-scheme: dark) {
+    color: var(--color-accent);
+  }
+}
+:root[data-theme="dark"] .hero-cert-badge:hover {
+  color: var(--color-accent);
 }
 
 .hero-cert-icon {
@@ -741,6 +757,11 @@ body.is-ready .hero-intro > * {
   mask-position: center;
   -webkit-mask-size: contain;
   mask-size: contain;
+  transition: background-color 0.15s ease;
+}
+
+.hero-cert-badge:hover .hero-cert-icon {
+  background-color: var(--color-accent);
 }
 
 .hero-stats {
@@ -1719,6 +1740,20 @@ body.is-ready .hero-photo-wrap {
 .course-name {
   font-weight: 700;
   color: var(--color-text);
+}
+
+.course-name-link:hover {
+  color: var(--color-accent-2);
+  text-decoration: underline;
+}
+
+:root:not([data-theme="light"]) .course-name-link:hover {
+  @media (prefers-color-scheme: dark) {
+    color: var(--color-accent);
+  }
+}
+:root[data-theme="dark"] .course-name-link:hover {
+  color: var(--color-accent);
 }
 
 .course-badge {

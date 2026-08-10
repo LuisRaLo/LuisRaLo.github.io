@@ -35,6 +35,7 @@ export interface CourseEntry {
   org: string;
   year: string;
   featured?: boolean;
+  link?: string;
 }
 
 export interface SkillGroup {
@@ -741,8 +742,21 @@ const techStackItems: TechItem[] = [
 ];
 
 const coursesData: CourseEntry[] = [
-  { name: "AI for All: From Basics to GenAI Practice", org: "NVIDIA", year: "2025", featured: true },
-  { name: "Python 101 for Data Science Certification", org: "Cognitive Class · IBM Developer Skills Network", year: "2021", featured: true },
+  {
+    name: "AI for All: From Basics to GenAI Practice",
+    org: "NVIDIA",
+    year: "2025",
+    featured: true,
+    link: "/assets/certificates/nvidia-ai-for-all.pdf",
+  },
+  {
+    name: "Python Essentials 1",
+    org: "Cisco Networking Academy",
+    year: "",
+    featured: true,
+    link: "https://www.credly.com/badges/36cb9f34-4231-4b55-83a1-73ae4eef77c9/linked_in_profile",
+  },
+  { name: "Python 101 for Data Science Certification", org: "Cognitive Class · IBM Developer Skills Network", year: "2021" },
   { name: "React Native Intermediate", org: "LinkedIn Academy", year: "2022" },
   { name: "Database Fundamentals", org: "Educalix", year: "2021" },
   { name: "Agile Methodologies Course", org: "ITT", year: "2021" },
