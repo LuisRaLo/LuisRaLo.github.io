@@ -752,7 +752,7 @@ const coursesData: CourseEntry[] = [
   {
     name: "Python Essentials 1",
     org: "Cisco Networking Academy",
-    year: "",
+    year: "2022",
     featured: true,
     link: "https://www.credly.com/badges/36cb9f34-4231-4b55-83a1-73ae4eef77c9/linked_in_profile",
   },
