@@ -76,6 +76,7 @@ export interface LangContent {
   about: { title: string; paragraph: string };
   spotlight: {
     eyebrow: string;
+    fundingBadge: string;
     title: string;
     subtitle: string;
     problemLabel: string;
@@ -224,6 +225,7 @@ const experienceES: JobEntry[] = [
       { title: "Senior Full-stack Developer", period: "Marzo 2025 – Julio 2025" },
     ],
     bullets: [
+      "Logré concretar y lanzar Axia, el producto principal, de inicio a fin.",
       "Asumí el liderazgo técnico del equipo, estableciendo SCRUM, estándares de desarrollo y alineación entre equipos.",
       "Implementé CI/CD, lineamientos de codificación, revisión de código, Gitflow y estrategias de monitoreo/alertamiento.",
       "Actué como Product Lead junto al CEO, definiendo visión de producto, modelo de negocio, roadmap y arquitectura técnica.",
@@ -251,8 +253,8 @@ const experienceES: JobEntry[] = [
         links: [{ label: "nolab.mx", url: "https://nolab.mx" }],
       },
       {
-        name: "Hiaxia",
-        description: "Producto desarrollado en NOLAB.",
+        name: "Axia",
+        description: "Producto principal desarrollado en NOLAB.",
         links: [{ label: "hiaxia.com", url: "https://hiaxia.com" }],
       },
     ],
@@ -265,6 +267,7 @@ const experienceES: JobEntry[] = [
     year: "2022",
     roles: [{ title: "Software Engineer B3", period: "Noviembre 2022 – Enero 2025" }],
     bullets: [
+      "Contribuí a mejoras de retención y de eficiencia operativa con un impacto de +$100K MXN mensuales.",
       "Impulsé la adopción de IaC en toda la compañía (Jenkins + CloudFormation), mejorando la seguridad de los pipelines.",
       "Lideré la planificación y ejecución de dos migraciones a gran escala, con mínima interrupción del servicio.",
       "Rediseñé y reestructuré la arquitectura del front-end, mejorando la experiencia de usuario y el rendimiento.",
@@ -304,6 +307,7 @@ const experienceES: JobEntry[] = [
     year: "2022",
     roles: [{ title: "Fullstack Engineer", period: "Enero 2022 – Noviembre 2022" }],
     bullets: [
+      "Logré terminar y entregar la app miNegocio MX para el cliente PepsiCo.",
       "Desarrollé IaC bajo prácticas DevOps, preparando la transición hacia una arquitectura de microservicios.",
       "Gestioné despliegues en EC2 y políticas/permisos de IAM.",
       "Desplegué el front-end en React vía AWS Amplify, con pipelines CI/CD en Jenkins y AWS Pipeline.",
@@ -505,6 +509,7 @@ const experienceEN: JobEntry[] = [
       { title: "Senior Full-stack Developer", period: "March 2025 – July 2025" },
     ],
     bullets: [
+      "Delivered Axia, the flagship product, from concept to launch.",
       "Took on technical leadership of the engineering team, establishing SCRUM, development standards, and cross-team alignment.",
       "Implemented CI/CD, coding guidelines, code review, Gitflow, and monitoring/alerting strategies.",
       "Acted as Product Lead alongside the CEO, defining product vision, business model, roadmap, and technical architecture.",
@@ -532,8 +537,8 @@ const experienceEN: JobEntry[] = [
         links: [{ label: "nolab.mx", url: "https://nolab.mx" }],
       },
       {
-        name: "Hiaxia",
-        description: "Product built at NOLAB.",
+        name: "Axia",
+        description: "Flagship product built at NOLAB.",
         links: [{ label: "hiaxia.com", url: "https://hiaxia.com" }],
       },
     ],
@@ -546,6 +551,7 @@ const experienceEN: JobEntry[] = [
     year: "2022",
     roles: [{ title: "Software Engineer B3", period: "November 2022 – January 2025" }],
     bullets: [
+      "Contributed to retention and operational efficiency improvements worth +$100K MXN/month.",
       "Drove company-wide IaC adoption (Jenkins + CloudFormation), improving pipeline security.",
       "Led the planning and execution of two large-scale migrations with minimal service disruption.",
       "Redesigned and restructured the front-end architecture, improving UX and performance.",
@@ -585,6 +591,7 @@ const experienceEN: JobEntry[] = [
     year: "2022",
     roles: [{ title: "Fullstack Engineer", period: "January 2022 – November 2022" }],
     bullets: [
+      "Delivered the miNegocio MX app to completion for client PepsiCo.",
       "Built IaC following DevOps practices, preparing the transition to a microservices architecture.",
       "Managed EC2 deployments and IAM policies/permissions.",
       "Deployed the React front-end via AWS Amplify with CI/CD pipelines in Jenkins and AWS Pipeline.",
@@ -790,6 +797,7 @@ export const content: { es: LangContent; en: LangContent } = {
     },
     spotlight: {
       eyebrow: "Lo que estoy construyendo",
+      fundingBadge: "Buscando ronda Seed",
       title: "Iruz Labs",
       subtitle:
         "Una plataforma omnicanal de agentes de IA (AAaaS) — WhatsApp, Instagram, Facebook, TikTok, SMS, Telegram y voz — que perfila, agenda, prospecta y califica leads para que tu equipo de ventas cierre con toda la información en mano.",
@@ -798,7 +806,7 @@ export const content: { es: LangContent; en: LangContent } = {
         "En cualquier vertical con procesos de venta —retail, real estate, belleza, automotriz, cobranza, call centers— los equipos pierden leads por falta de seguimiento rápido y constante en los canales donde ya están sus prospectos. Escalar un equipo humano para cubrir todos esos canales es caro y lento.",
       productLabel: "El producto",
       product:
-        "Iruz Labs construye agentes de IA que trabajan de forma omnicanal —WhatsApp, Instagram, Facebook, TikTok, SMS, Telegram y llamadas de voz— perfilando, agendando, prospectando y calificando leads las 24 horas. El agente humano entra al final del proceso, ya con todo el contexto, para cerrar la venta. Incluye un CRM propio con trazabilidad end-to-end del funnel.",
+        "Iruz Labs construye agentes de IA que trabajan de forma omnicanal —WhatsApp, Instagram, Facebook, TikTok, SMS, Telegram y llamadas de voz— perfilando, agendando, prospectando y calificando leads las 24 horas. El agente humano entra al final del proceso, ya con todo el contexto, para cerrar la venta. Incluye un CRM propio con trazabilidad end-to-end del funnel. Lidero un equipo reducido de ingeniería y ventas.",
       proofLabel: "Prueba de tracción",
       proof:
         "Dos casos de éxito en real estate además de GRUPO DRT (Querétaro), y clientes activos en Colombia (Integrity Inmo) y Estados Unidos (DBO Graphics), generando en conjunto ~$1,000+ USD/mes en MRR inicial. Seleccionados en el pitch de Deel, con beneficios de AWS for Startups y Deel for Startups.",
@@ -812,7 +820,7 @@ export const content: { es: LangContent; en: LangContent } = {
         { label: "iruzlabs.com", url: "https://iruzlabs.com" },
         { label: "Ver producto (Atenea)", url: "https://atenea.iruzlabs.com" },
       ],
-      cta: "¿Te interesa invertir o colaborar con Iruz Labs? Hablemos.",
+      cta: "¿Te interesa invertir en nuestra ronda seed o colaborar con Iruz Labs? Hablemos.",
     },
     experience: {
       title: "Experiencia Laboral",
@@ -899,6 +907,7 @@ export const content: { es: LangContent; en: LangContent } = {
     },
     spotlight: {
       eyebrow: "What I'm building",
+      fundingBadge: "Raising a Seed round",
       title: "Iruz Labs",
       subtitle:
         "An omnichannel AI agent platform (AAaaS) — WhatsApp, Instagram, Facebook, TikTok, SMS, Telegram, and voice — that profiles, schedules, prospects, and qualifies leads so your sales team can close with full context.",
@@ -907,7 +916,7 @@ export const content: { es: LangContent; en: LangContent } = {
         "In any sales-driven vertical — retail, real estate, beauty, automotive, debt collection, call centers — teams lose leads due to slow, inconsistent follow-up across the channels where their prospects already are. Scaling a human team to cover every channel is expensive and slow.",
       productLabel: "The product",
       product:
-        "Iruz Labs builds AI agents that work omnichannel — WhatsApp, Instagram, Facebook, TikTok, SMS, Telegram, and voice calls — profiling, scheduling, prospecting, and qualifying leads 24/7. The human agent steps in at the end, with full context, to close the sale. Includes an in-house CRM with end-to-end funnel traceability.",
+        "Iruz Labs builds AI agents that work omnichannel — WhatsApp, Instagram, Facebook, TikTok, SMS, Telegram, and voice calls — profiling, scheduling, prospecting, and qualifying leads 24/7. The human agent steps in at the end, with full context, to close the sale. Includes an in-house CRM with end-to-end funnel traceability. I lead a small engineering and sales team.",
       proofLabel: "Proof of traction",
       proof:
         "Two real-estate success stories in addition to GRUPO DRT (Querétaro), plus active clients in Colombia (Integrity Inmo) and the United States (DBO Graphics), generating a combined ~$1,000+ USD/mo in initial MRR. Selected for Deel's pitch program, with AWS for Startups and Deel for Startups perks.",
@@ -921,7 +930,7 @@ export const content: { es: LangContent; en: LangContent } = {
         { label: "iruzlabs.com", url: "https://iruzlabs.com" },
         { label: "See the product (Atenea)", url: "https://atenea.iruzlabs.com" },
       ],
-      cta: "Interested in investing in or collaborating with Iruz Labs? Let's talk.",
+      cta: "Interested in investing in our seed round, or collaborating with Iruz Labs? Let's talk.",
     },
     experience: {
       title: "Work Experience",

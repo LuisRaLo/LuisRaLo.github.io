@@ -888,12 +888,31 @@ body.is-ready .hero-photo-wrap {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
 }
 
+.spotlight-eyebrow-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
 .spotlight-eyebrow {
   color: var(--color-accent);
 }
 
 .spotlight-eyebrow::before {
   background: var(--color-accent);
+}
+
+.spotlight-funding-badge {
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #04211f;
+  background: var(--color-accent);
+  padding: 4px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
 }
 
 .spotlight-title {

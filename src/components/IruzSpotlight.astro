@@ -15,7 +15,10 @@ const s = content.spotlight;
       <div class="spotlight-header">
         <img class="spotlight-logo" src="/assets/logos/iruzlabs.png" alt="Iruz Labs" width="56" height="56" />
         <div>
-          <span class="eyebrow spotlight-eyebrow">{s.eyebrow}</span>
+          <div class="spotlight-eyebrow-row">
+            <span class="eyebrow spotlight-eyebrow">{s.eyebrow}</span>
+            <span class="spotlight-funding-badge">{s.fundingBadge}</span>
+          </div>
           <h2 class="section-title spotlight-title">{s.title}</h2>
           <p class="spotlight-subtitle">{s.subtitle}</p>
         </div>
