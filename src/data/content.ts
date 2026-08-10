@@ -267,7 +267,7 @@ const experienceES: JobEntry[] = [
     year: "2022",
     roles: [{ title: "Software Engineer B3", period: "Noviembre 2022 – Enero 2025" }],
     bullets: [
-      "Contribuí a mejoras de retención y de eficiencia operativa con un impacto de +$100K MXN mensuales.",
+      "Contribuí a mejoras de retención y de eficiencia operativa con un impacto de +$100K USD mensuales.",
       "Impulsé la adopción de IaC en toda la compañía (Jenkins + CloudFormation), mejorando la seguridad de los pipelines.",
       "Lideré la planificación y ejecución de dos migraciones a gran escala, con mínima interrupción del servicio.",
       "Rediseñé y reestructuré la arquitectura del front-end, mejorando la experiencia de usuario y el rendimiento.",
@@ -551,7 +551,7 @@ const experienceEN: JobEntry[] = [
     year: "2022",
     roles: [{ title: "Software Engineer B3", period: "November 2022 – January 2025" }],
     bullets: [
-      "Contributed to retention and operational efficiency improvements worth +$100K MXN/month.",
+      "Contributed to retention and operational efficiency improvements worth +$100K USD/month.",
       "Drove company-wide IaC adoption (Jenkins + CloudFormation), improving pipeline security.",
       "Led the planning and execution of two large-scale migrations with minimal service disruption.",
       "Redesigned and restructured the front-end architecture, improving UX and performance.",
