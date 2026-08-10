@@ -119,7 +119,7 @@ const experienceES: JobEntry[] = [
     logoImage: "/assets/logos/iruzlabs.png",
     year: "2025",
     location: "Remoto",
-    roles: [{ title: "Founder & CTO", period: "Marzo 2025 – Actual" }],
+    roles: [{ title: "Founder, CEO & CTO", period: "Marzo 2025 – Actual" }],
     bullets: [
       "Fundé la empresa desde cero: visión, modelo de negocio (SaaS B2B), estrategia comercial y go-to-market.",
       "Diseñé y desarrollé el producto principal: una plataforma AAaaS (Autonomous Agents as a Service) omnicanal (WhatsApp, Instagram, Facebook, TikTok, SMS, Telegram y voz) para comunicación proactiva y reactiva.",
@@ -400,7 +400,7 @@ const experienceEN: JobEntry[] = [
     logoImage: "/assets/logos/iruzlabs.png",
     year: "2025",
     location: "Remote",
-    roles: [{ title: "Founder & CTO", period: "March 2025 – Present" }],
+    roles: [{ title: "Founder, CEO & CTO", period: "March 2025 – Present" }],
     bullets: [
       "Founded the company from scratch: vision, business model (B2B SaaS), commercial strategy, and go-to-market.",
       "Designed and built the core product: an omnichannel AAaaS (Autonomous Agents as a Service) platform (WhatsApp, Instagram, Facebook, TikTok, SMS, Telegram, and voice) for proactive and reactive communication.",
@@ -786,7 +786,7 @@ export const content: { es: LangContent; en: LangContent } = {
     about: {
       title: "Sobre mí",
       paragraph:
-        "Ingeniero de software con más de 14 años construyendo sistemas distribuidos, y hoy founder de una startup de IA. Combino profundidad técnica —arquitecturas basadas en eventos, microservicios, automatización con LLMs— con visión de negocio: sé identificar cuándo un problema de ingeniería es, en realidad, un problema de producto o de go-to-market. Antes de fundar Iruz Labs lideré equipos de ingeniería en Stori, Publicis, NOLAB y Arkos MX, estableciendo estándares de SCRUM, CI/CD y observabilidad en cada uno.",
+        "Ingeniero de software con más de 14 años construyendo sistemas distribuidos, y hoy founder de una startup de IA. Combino profundidad técnica —arquitecturas basadas en eventos, microservicios, automatización con LLMs— con visión de negocio: sé identificar cuándo un problema de ingeniería es, en realidad, un problema de producto o de go-to-market. Antes de Iruz Labs lideré equipos de ingeniería en Stori y Publicis; mientras escalaba Iruz Labs en su etapa inicial, compaginé consultoría de Tech Lead en NOLAB y Arkos MX, estableciendo estándares de SCRUM, CI/CD y observabilidad en cada uno.",
     },
     spotlight: {
       eyebrow: "Lo que estoy construyendo",
@@ -895,7 +895,7 @@ export const content: { es: LangContent; en: LangContent } = {
     about: {
       title: "About me",
       paragraph:
-        "Software engineer with 14+ years building distributed systems, and today the founder of an AI startup. I combine technical depth — event-driven architectures, microservices, LLM-based automation — with business judgment: knowing when an engineering problem is really a product or go-to-market problem. Before founding Iruz Labs, I led engineering teams at Stori, Publicis, NOLAB, and Arkos MX, establishing SCRUM, CI/CD, and observability standards at each.",
+        "Software engineer with 14+ years building distributed systems, and today the founder of an AI startup. I combine technical depth — event-driven architectures, microservices, LLM-based automation — with business judgment: knowing when an engineering problem is really a product or go-to-market problem. Before Iruz Labs, I led engineering teams at Stori and Publicis; while scaling Iruz Labs in its early stage, I combined that with Tech Lead consulting at NOLAB and Arkos MX, establishing SCRUM, CI/CD, and observability standards at each.",
     },
     spotlight: {
       eyebrow: "What I'm building",
